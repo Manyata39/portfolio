@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        
+            <nav class="navbar">
+                <img src="./images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="container">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Manyata</span></h1>
+            </div>
+        </div>
+    </div>
+ <!-- -------------about----------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a student at sir mvit institute persuing my bachelors in Engineering from electronics and communication branch.With keen interest in web development I'm also interested in my hobbies like painting, crafting,designing etc. </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Hackerrank</span><br>4 stars in hackerrank problem solving</li>
+                        <li><span>Web development</span><br>developing websites</li>
+                        <li><span>Verbal Communication</span><br>Good speaking and listening skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Participated in Codeshack's Hackathon</li>
+                        <li><span>2023</span><br>Web development Mentor at college club codeshack</li>
+                        <li><span>2023-2024</span><br>Volunteered in college club</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Completed schooling from Army Public School danapur cantt patna</li>
+                        <li><span>2022-2026</span><br>College at Sir M Visvesvaraya institute of technology</li>
+                        <li><span>2026</span><br>Graduated in B.E from college</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------Services----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Frontend delopement</h2>
+                <p>I specialize in crafting responsive and interactive websites using HTML, CSS,JavaScript and React js With a focus on clean code and performance, I ensure the user interfaces I build are both functional and visually appealing. I also work with modern frameworks like React to create scalable, component-based applications.</p>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX</h2>
+                <p>Designing with users in mind is at the core of my process. I create intuitive interfaces and seamless user experiences by combining creativity with usability principles. I use tools like Figma to plan layouts and ensure that every interaction is meaningful and user-friendly.</p>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>DSA</h2>
+                <p>I consistently practice Data Structures and Algorithms to strengthen my problem-solving skills. With a strong grasp of concepts like arrays, linked lists,strings, and sorting algorithms, I aim to write optimized code that performs well and scales efficiently, especially in competitive programming and technical interviews.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------portfolio------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/bg.avif">
+                <div class="layer">
+                    <h3>Todos list</h3>
+                    <p>website to have your todos ordered. </p>
+                    <a href="https://my-todo-app-roan-ten.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="/images/bg.avif">
+                <div class="layer">
+                    <h3>Word Atlas</h3>
+                    <p>discover the world's countries using this website.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="/images/bg.avif">
+                <div class="layer">
+                    <h3>weather app</h3>
+                    <p>website to know weather using api. </p>
+                    <a href="https://manyata-weather-app.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" onclick="openModal()">See More</a>
+    </div>
+    <!-- Modal Popup -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 class="sub-title">More Projects</h2>
+    <div class="work-list">
+      <div class="work">
+        <img src="/images/bg.avif">
+        <div class="layer">
+          <h3>Netflix Clone</h3>
+          <p>A basic frontend clone using HTML/CSS</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="/images/bg.avif">
+        <div class="layer">
+          <h3>Portfolio Site</h3>
+          <p>This portfolio was created using HTML, CSS, and JS</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="/images/bg.avif">
+        <div class="layer">
+          <h3>Blog Page</h3>
+          <p>A styled blog page layout using cards</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ </div>
+<!-- ---------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> manyatasingh2805@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9117501707</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Manyata39"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/manyata__0?igsh=MTFnbXh2NzI1OHJ0bA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/manyata-9b847a27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="./images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="text" name="Email" placeholder="your email id" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Manyata <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+     }
+</script>
+
+<script>
+  function openModal() {
+    document.getElementById('popupModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('popupModal').style.display = 'none';
+  }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu( ){
+        sidemenu.style.right = "0";
+    }
+    function closemenu( ){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbygHJcmVF-upKpVrs8scc5FsRNR2-7PxFzJFTbITY-jIM2sHofUzdGE1_ko6lHXBq7X/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
